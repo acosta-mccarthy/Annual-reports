@@ -1,7 +1,7 @@
 SELECT
 
 --PART III - Total borrowers by location and residency
-LEFT(location_code, 3) AS "LOCATION",
+LEFT(home_library_code, 3) AS "LOCATION",
 COUNT(CASE when home_library_code IS NOT NULL AND ptype_code != '3' then 1 end)AS "Resident Borrowers 3.2",
 COUNT(CASE when home_library_code IS NOT NULL AND ptype_code = '3' then 1 end)AS "Non-Resident Borrowers 3.3",
 COUNT(CASE when home_library_code IS NOT NULL then 1 end)AS  "Total Number of Borrowers"

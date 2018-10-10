@@ -84,7 +84,7 @@ ORDER BY "LOCATION"
 '''
 
 
-#SQL Query Part III
+#SQL Query Part III - Borrowers
 q2='''SELECT
 
 --PART III - Total borrowers by location and residency
